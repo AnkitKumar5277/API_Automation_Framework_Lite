@@ -11,19 +11,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'pytest -n auto'
+                bat 'pytest -n auto --alluredir=allure-results'
             }
         }
 
         stage('Allure Report') {
             steps {
-                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+                allure includeProperties: false, results: [[path: 'allure-results']]
             }
         }
     }
