@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/api-framework.git'
+                git 'https://github.com/AnkitKumar5277/API_Automation_Framework_Lite.git'
             }
         }
 
