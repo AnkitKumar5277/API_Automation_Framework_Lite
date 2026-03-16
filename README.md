@@ -35,17 +35,9 @@ api-automation-framework
 * **Fixtures for reusable setup**
 * **Allure Reporting**
 * **CI/CD Integration with Jenkins**
+* **made with openclaude and chatgpt**
 
 ---
-
-# Installation
-
-Clone the repository
-
-```
-git clone <repo-url>
-cd api-automation-framework
-```
 
 Install dependencies
 
@@ -60,6 +52,8 @@ pip install -r requirements.txt
 Run all tests
 
 ```
+python -m venv venv
+venv\Scripts\activate
 pytest
 ```
 
@@ -78,41 +72,11 @@ pytest --alluredir=allure-results
 Generate report
 
 ```
+scoop install allure
+pytest --alluredir=allure-results
 allure serve allure-results
 ```
-
 ---
-
-# Data Driven Testing
-
-Test data is stored in:
-
-```
-src/data/booking_data.csv
-```
-
-Tests read CSV data and execute the same test with multiple inputs.
-
----
-
-# CI/CD (Jenkins)
-
-The project includes a **Jenkinsfile** to automate:
-
-1. Code checkout
-2. Dependency installation
-3. Test execution
-4. Allure report generation
-
----
-
-# Requirements
-
-* Python 3.8+
-* PyTest
-* Requests
-* pytest-xdist
-* Allure
 
 Install all dependencies using:
 
@@ -122,15 +86,9 @@ pip install -r requirements.txt
 
 ---
 
-# Author
-
 Automation framework for **learning API testing using PyTest**.
 
+<img width="1920" height="1080" alt="Screenshot 2026-03-16 233748" src="https://github.com/user-attachments/assets/7b8b5805-6dba-4da4-bd00-5687432f4552" />
 
-python -m venv venv
 
-venv\Scripts\activate
 
-scoop install allure
-
-pytest --alluredir=allure-results
