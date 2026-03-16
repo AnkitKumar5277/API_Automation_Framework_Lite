@@ -1,0 +1,4 @@
+firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+Ankit,Kumar,1200,True,2026-01-10,2026-01-15,Breakfast
+John,Smith,1500,True,2026-02-01,2026-02-05,Lunch
+Alex,Brown,900,False,2026-03-01,2026-03-10,None
