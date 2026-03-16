@@ -62,13 +62,6 @@ Run tests in **parallel**
 ```
 pytest -n auto
 ```
-
-Run with **Allure report**
-
-```
-pytest --alluredir=allure-results
-```
-
 Generate report
 
 ```
@@ -94,7 +87,7 @@ Automation framework for **learning API testing using PyTest**.
 ## **Git & Github :**   
 <img width="610" height="449" alt="Screenshot 2026-03-17 004718" src="https://github.com/user-attachments/assets/a7b3b54d-b770-4fae-9d13-12f945e9e992" />
 
-## **Github :**  
+## **Jenkins :**  
 <img width="1919" height="985" alt="Screenshot 2026-03-17 005025" src="https://github.com/user-attachments/assets/59c53560-f55a-4830-8343-86c847eb50fd" />
 
 ## **Allure Report :**  
